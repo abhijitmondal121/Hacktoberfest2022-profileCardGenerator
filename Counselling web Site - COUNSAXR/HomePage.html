@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="1.css">
+	<link rel="stylesheet" href="Footer.css">
+	<link rel="stylesheet" href="Navigation.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+ 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>CounsaXR-Home</title>
+</head>
+<body>
+<header>
+
+<!-- navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark  fixed-top navex">
+  <div class="container">
+    <a class="navbar-brand" href="#">CounsaXR</a>
+    <button class="navbar-toggler" type="button" id="btn1" onclick="openFunction()">
+     <img id="toga" src="images/toggle.gif"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+        <li class="nav-item">
+          <a class="nav-link ms-3 active" href="#" >Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#">Services</a></li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#">ContactUs</a></li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#" data-toggle="modal" data-target="#exampleModalCenter2">Join</a></li>
+        <li class="nav-item">
+          <a class="nav-link ms-3" href="#">SignIn</a></li>
+      </ul>  
+  </div>
+</nav>
+
+<!--Register Popup-->
+
+<div class="modal row modal-lg modal-sm  fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog-centered d" role="document">
+    <div class="container" id="container">
+      <div class="abcdef">
+<h2></h2>
+<div class="b" id="container">
+  <div class="form-container sign-up-container">
+    <form class="abc" action="#">
+      <h2>Create Account</h2>
+      <div class="social-container">
+        <a class="abcd" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a class="abcd" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a class="abcd" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span class="e">or use your email for registration</span>
+      <input class="a" type="text" placeholder="Name" />
+      <input class="a" type="email" placeholder="Email" />
+      <input class="a" type="password" placeholder="Password" />
+      <button class="ab">Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form class="abc" action="#">
+      <h2>Sign in</h2>
+      <div class="social-container">
+        <a class="abcd" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a class="abcd" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a class="abcd" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span class="e">or use your account</span>
+      <input class="a" type="email" placeholder="Email" />
+      <input class="a" type="password" placeholder="Password" />
+      <a class="abcd" href="#">Forgot your password?</a>
+      <button class="ab">Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="c">
+      <div class="overlay-panel overlay-left">
+        <h1>Welcome Back!</h1>
+        <p class="abcde">To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p class="abcde">Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--toogle navbar-->
+	<div class="sidemenu" id="menu">     
+          <a  href="#">Home</a></li>        
+          <a  href="#">Services</a></li>        
+          <a  href="#">ContactUs</a></li>       
+          <a  href="#">Join</a></li>
+          <a  class="closebtn" onclick="closeFunction()">&times;</a>
+  </div>
+</header>
+
+<!-- vedio background-->
+<section id="home">
+	<video controls="" autoplay="" muted="" loop="">
+		<source src="video/background.mp4" type="video/mp4">
+	</video>
+	<div class="container vv">
+    <div class="row pt-5 vv">
+			<div class="home-text col-md-8 col-sm-12">
+				<h1>Join with us!</h1>
+				<p>Sri Lanka's #1 counsiller service provider..</p>
+        		<ul class="section-btn">
+          			<a href="#"><span data-hover="GO Now . . .">Explore More</span></a>
+        		</ul>
+			</div>
+	</div>
+	</div>
+	<div class="overlay"></div>
+</section>
+
+<!--intro text-->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-text text-center">
+      <h1 class="ml6">
+        <span class="text-wrapper">
+        <span class="letters">Sri Lanka's #1 online counselling platform...</span>
+        </span>
+        </h1>
+      <h2>CounsaXR</h2>
+      <hr id="hr1">
+      <p id="p1">
+        You can acess our online counselling service immediately and get caring, effective and evidence based support when you need it!.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--card section-->
+<section id="card">
+<div class="container-fluid ">
+  <div class="row" id="row1">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="images/simple_steps/2.jpg">
+        <div class="card-body">
+          <h4 class="card-title text-center">Easily Accessible</h4>
+          <p class="card-text">If you live in a remote area, you now have a greater choice of counsellors without the travel and there is always access for those who have mobility issues.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="images/simple_steps/5.png">
+        <div class="card-body">
+          <h4 class="card-title text-center">Real privacy</h4>
+          <p class="card-text">You can now get caring effective help without public waiting rooms and your secure data will never be shared with 3rd party systems or other comanies.</p>
+        </div>
+      </div>
+    </div>     
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="images/simple_steps/3.jpg">
+        <div class="card-body">
+          <h4 class="card-title text-center">Perfect counsillor</h4>
+          <p class="card-text">An exellent choice of online counsellors and psychologists. Once found the right counsellor or psychologist,can make real improvements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- simple steps-->
+<section id="simple">
+  <div class="container-sm">
+    <div class="home-text">
+      <h3>Just only 3 simple steps to get started!...</h3>
+      <div class="row pt-5">
+        <div class="col-md">
+          <h5>1. Choose your counsillor.</h5>
+          <h1><i class="fas fa-search pt-4 pb-3"></i></h1>
+          <p>We hav got fanstastic group of qualified consellors with experince across all areas of health categories..</p>
+        </div>
+        <div class="col-md">
+          <h5>2. Appoint your meetings.</h5>
+          <h1><i class="far fa-calendar-alt pt-4 pb-3"></i></h1>
+          <p>Just choose your counsillor and make a appointment regard your convenience.</p>
+        </div>
+        <div class="col-md">
+          <h5>3. Start your consultation.</h5>
+          <h1><i class="fas fa-user-md pt-4 pb-3"></i></h1>
+          <p>Th link will be send your secure online counselling session.just click to get started.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--customer_reviews-->
+<section id="reviews">
+<h2 class="text-center">We value our customer feedback!</h2>
+<div class="container pb-4 whole">		
+	<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-5  pe-3">				
+        <div class="review">
+					<img src="images/c_reviews/1.jpg">
+					<div>
+						<p class="ps-4">It is very awesome site for me. Just a simple way to contact for counsillor and it's free. </p>
+						<h6 class="ps-3">Deshitha Hansajith</h6>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+					</div>	
+        </div>
+			</div>	
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-3  pe-5 ">				
+				<div class="review">
+						<img src="images/c_reviews/2.jpg">
+						<div>
+						<p class="ps-4">Superb and exellent. Nice job done srilanka.Love it...</p>
+						<h6 class="ps-3">Piyumi Thathsarani</h6>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+						<i class="far fa-star"></i>
+						</div>	
+				</div>
+			</div>		
+	</div>
+	<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-5  pe-3 ">				
+				<div class="review">
+					<img src="images/c_reviews/4.jpg">
+					<div>
+					<p class="ps-4">Super website I ever visited. Nice support team is there to support me to do counsillor.Recommend!</p>
+					<h6 class="ps-3">Dilki</h6>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					</div>	
+				</div>
+			</div>	
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-3  pe-5 ">				
+				<div class="review">
+						<img src="images/c_reviews/5.jpg">
+						<div>
+						<p class="ps-4">Good site in sri lanka. I had connect 3 times counsillors easily. No cost its free. Visit and meet your counsillor.Hurry!</p>
+						<h6 class="ps-3">Viashalya </h6>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i>
+						</div>	
+				</div>
+			</div>		
+	</div>	
+	<div class="row">
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-5  pe-3">				
+				<div class="review">
+					<img src="images/c_reviews/3.jpg">
+					<div>
+					<p class="ps-4">Have a good conservation with cousillor and me. I had got lot info via this site. Highly recommended!.</p>
+					<h6 class="ps-3 pb-0">Chaith Roshan</h6>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+					<i class="far fa-star"></i>
+					</div>	
+				</div>
+			</div>	
+			<div class="col-lg-6 col-md-12 col-sm-12 pb-3 pt-3 ps-3  pe-5">				
+				<div class="review">
+					<img src="images/c_reviews/6.jpg">
+					<div>
+					<p class="ps-4">Tryit now. Looking for fast and effective counsillor surviallence, recommended!Top rating I think.</p>
+					<h6 class="ps-3">Ravindu</h6>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					</div>	
+				</div>
+			</div>		
+	</div>
+	<ul class="readmore text-center pb-5">
+		<a href="#"><span data-hover="GO Now . .">Read More</span></a>
+    </ul>
+</div>		
+</div>
+</section>
+
+<!-- Footer-->
+<section id="footer1">
+<footer class="bg-grey py-5">
+<div class="container">
+   <div class="row">
+      <div class="col-md-6 col-sm-12">
+         <div class="row">
+            <div class="col-md-6 ">
+               <div class="logo-part">
+                  <img src="" class="w-50 logo-footer" ><h4 class="pt-3" style="font-family:'babapro font',sans-serif;">CounsaXR</h4>
+                  <p class="pt-5">Future of Online Surveillence.</p>
+                  <p class="pb-3">10+ k followers with high ratings.</p>
+               </div>
+            </div>
+            <div class="col-md-6 px-4">
+               <h6> About Us</h6>
+               <p>Contact- 047 4 549 754</p>
+               <p>Fax- 047 4 549 753</p>
+               <p>Email- counsaxr@info.lk</p>
+               <a href="#" class="btn-footer"> Team </a><br>
+               <a href="#" class="btn-footer"> Explore Now</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6 ">
+         <div class="row">
+            <div class="col-md-6 px-4">
+               <h6> Qucik Link</h6>
+               <div class="row ">
+                  <div class="col-md-6">
+                     <ul>
+                        <li> <a href="#"> Home</a> </li>
+                        <li> <a href="#"> Services</a> </li>
+                        <li> <a href="#"> Join</a> </li>
+                        <li> <a href="#"> SignIn</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 ">
+               <h6> Connect via</h6>
+               <div class="social">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+               </div>
+           		
+            </div><p class="text-center pt-3" style="font-size: 15px;">Copyright © 2021, All Right Reserved CounsaXR.</p>
+         </div>
+      </div>
+   </div>
+</div>
+</footer>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	function openFunction(){
+		document.getElementById("menu").style.width="300px";
+		document.getElementById("btn1").style.visibility="hidden";
+	}
+	function closeFunction(){
+		document.getElementById("menu").style.width="0px";
+		document.getElementById("btn1").style.visibility="visible";	
+	}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="LogoText.js"></script>
+<script src="1.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>

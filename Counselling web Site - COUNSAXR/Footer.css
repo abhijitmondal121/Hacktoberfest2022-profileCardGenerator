@@ -1,0 +1,68 @@
+/*footer*/
+ body {
+        font-family: 'Signika', sans-serif;
+     }
+     .bg-grey {
+        background: #292929;
+     }
+     .logo-footer {
+        margin-bottom: 40px;
+     }
+     footer {
+            color: grey;
+     }
+     footer p, a {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+footer h6 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 20px;
+}
+footer h6:after {
+    position: absolute;
+    content: "";
+    background: grey;
+    width: 12%;
+    height: 1px;
+    left: 0;
+    bottom: -20px;
+}
+.btn-footer {
+    color: grey;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 12px;
+    padding: 7px 30px;
+    line-height: 47px;
+}
+     footer ul li {
+    list-style: none;
+    display: block;
+}
+  footer ul  {
+   padding-left: 0;
+}
+footer ul  li a{
+  text-decoration: none;
+  color: grey;
+  text-decoration:none;
+}
+a:hover {
+    text-decoration: none;
+    color: #f5f5f5 !important;
+    
+}
+.logo-part {
+    border-right: 1px solid grey;
+    height: 100%;
+}
+.social .fab {
+    font-size:4vh;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
