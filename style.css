@@ -138,8 +138,8 @@ button:hover {
 
 .card:hover{
     border-radius: 0px ;
-    color: white; 
-    background-color: black ;
+    color: black; 
+    background-color: rgb(212, 211, 211) ;
 }
 
 .card img {
@@ -154,7 +154,7 @@ button:hover {
 }
 
 .card-text {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .card a {
