@@ -15,16 +15,16 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 
 ##Steps
 <br></br>
- step1:go to https://github.com/abhijitmondal121/Hacktoberfest-profileCardGenerator and click on *"star"*🌟 and *"fork"*🍴 and follow the account. 
+ Step-1: Go to https://github.com/abhijitmondal121/Hacktoberfest-profileCardGenerator and click on *"star"*🌟 and *"fork"*🍴 and follow the account. 
 
 
   
     
-  step2: upload an image in images folder
+  Step-2: Upload an image in images folder
 
-  step3: open index.html
+  Step-3: Open index.html
 
-  step4: copy the card section example {
+  Step-4: Copy the card section example {
 
          <div class="card" style="width: 17rem; margin:20px;border-radius: 10%;box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);">
             <img src="images/b.jfif" class="card-img-top" alt="...">
@@ -38,13 +38,13 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 
   }
 
-  step5: paste it after other cards.
+  Step-5: Paste it after other cards.
 
-  step6: change your photo ,name,your bio,github link and linkedin link
+  Step-6: Change your photo ,name,your bio,github link and linkedin link
 
-  step7: commit
+  Step-7: commit
 
-  step8: make pull request
+  Step-8: make pull request
 
 
 <br></br>
@@ -59,7 +59,7 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 
 ## HacktoberFest Rules :
 
-- To earn your Hacktoberfest tee or tree reward, you must **register** and make **four valid pull requests** (PRs) between October 1-31 (in any time zone).
+- To earn your Hacktoberfest t-shirt or tree as a reward, you must **register** and make **four valid pull requests** (PRs) between October 1-31 (in any time zone).
 - Pull requests can be made in any participating GitHub or GitLab hosted repository/project. Look for the `hacktoberfest` topic to know if a repository/project is participating in Hacktoberfest.
 - Pull requests must be approved by a maintainer of the repository/project to count.
 - If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate.
