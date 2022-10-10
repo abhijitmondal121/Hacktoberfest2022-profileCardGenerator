@@ -1,0 +1,315 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin:0;
+	padding :0;
+	box-sizing: border-box;
+}
+.bg{
+	background: transparent;
+	transition: 0.2s ease;
+}
+.bg.scroll{
+	background: green;
+}
+body{
+	background: #ffffff;
+}
+
+/*card-section*/
+#card{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.wc{
+	padding-top: 120px;
+}
+.search-btn{
+	
+	height: 30px;
+	width: 80px;
+	background: #ffeb3b;
+	border: none;
+	color: #000;
+	border-radius: 25px;
+}
+.search-btn:hover{
+	cursor: pointer;
+	background: #ffc107;
+
+}
+.search-field{
+	height: 40px;
+	padding: 10px;
+	border:none; 
+	border-radius:25px;
+	outline: none;
+	justify-content: center;
+}
+.name{
+	width: 300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.disease{
+	width: 300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+}
+.search form {
+	background: rgba(0,0,0,0.3);
+	padding: 1px;
+	background-position: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 140px;
+}
+.x {
+	background: rgba(0,0,0,0.3);
+	padding: 1px;
+	background-position: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+select {
+	padding: 7px 7px;
+	border: 1px solid white;
+	border-radius: 16px;
+	cursor: pointer;
+	font-size: 16px;
+	outline: none;
+}
+
+.xx1{
+	font-size: 29px;
+	letter-spacing: 0.5px;
+}
+/*feedback_form*/
+.feedback_user{
+	padding-bottom: 30px;
+	width: 700px;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+	box-shadow: 0 0 8px rgba(250,250,250,0.6);
+	border-radius: 10px;
+	opacity: 0.6;
+}
+.feedback_user form{
+
+	align-items: center;
+	justify-content: center;
+}
+.feedback_user form.feedback{
+	position: relative;
+}
+.feedback i{
+	position: absolute;
+}
+.feedback_user form input{
+	width: 100%;
+	height: 50px;
+	margin: 4px 0;
+	border: 1px solid #5c5c5c;
+	border-radius: 3px;
+	background:#181717;
+	padding:0 15px;
+}
+.feedback_user form textarea{
+	padding: 5px 5px;
+	border: 1px solid #5c5c5c;
+	border-radius: 3px;
+	background: #181717;
+	font-size: 20px;
+	width: 100%;
+	margin: 4px 0;
+}
+.feedback_user form button{
+	margin-top: 5px;
+	border: none;
+	background: #00fff0;
+	color: #222;
+	padding: 10px 0;
+	width: 120px;
+	font-size:20px;
+	font-weight: 800; 
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+.feedback_user form button:hover{
+	color: #111;
+	background: #f5f5f5;
+	transition: all 1.6s ease;
+}
+.feedback_user form input:focus,
+.feedback_user form textarea:focus{
+	border: 1px solid #00fff0;
+	color:#00fff0;
+	transition: all 0.5s ease;
+}
+.feedback_user form input:focus::placeholder,
+.feedback_user form textarea:focus::placeholder{
+	padding-left: 4px;	
+	color:#00fff0;
+	transition: all 0.5s ease;
+}
+.feedback{
+	align-items: center;
+	justify-content: center;
+}
+			.rate-area {
+    			float:left;
+   			    border-style: none;
+   			    padding: 0 100px;
+			}
+			.rate-area:not(:checked) > input {
+    			position:absolute;
+    			top:-9999px;
+    			clip:rect(0,0,0,0);
+			}
+			.rate-area:not(:checked) > label {
+   				float: right;
+    			width: .80em;
+    			overflow: hidden;
+    			white-space: nowrap;
+    			cursor: pointer;
+   			    font-size: 40px;
+    			line-height: 32px;
+    			color: lightgrey;
+   			    margin-bottom: 10px !important;
+			}
+			.rate-area:not(:checked) > label:before {
+   			    content: '★';
+			}
+
+			.rate-area > input:checked ~ label {
+   				color: #ffa500;
+    			text-shadow: none;
+			}
+			.rate-area:not(:checked) > label:hover,
+			.rate-area:not(:checked) > label:hover ~ label {
+    			color: #ffa500;
+			}
+			.rate-area > input:checked + label:hover,
+			.rate-area > input:checked + label:hover ~ label,
+			.rate-area > input:checked ~ label:hover,
+			.rate-area > input:checked ~ label:hover ~ label,
+			.rate-area > label:hover ~ input:checked ~ label {
+			    color: #e8262d;
+			    text-shadow: none;
+			}
+			.rate-area > label:active {
+			    position:relative;
+			    top:0px;
+			    left:0px; 
+			}
+
+/*phiscal Therapy*/
+
+.image img{
+	height: 400px;
+
+}
+.wc1{
+	padding-top: 65px;	
+}
+#card1{
+	max-height: 200px;
+}
+.bgn{
+	background: rgba(0,0,0,0.3);
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+#hr1{
+	height: 4px;
+	color: blue;
+	width: 100%;
+}
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
