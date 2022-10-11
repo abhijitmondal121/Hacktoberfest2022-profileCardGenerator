@@ -1,4 +1,5 @@
 # Hacktoberfest-profileCardGenerator
+
 Create Hacktoberfest PRs. Star this Repo!⭐
 
 
@@ -11,20 +12,21 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 - All backgrounds and skill levels are encouraged to complete the challenge.
 - Hacktoberfest is a celebration open to everyone in our global community.
 - You can sign up **anytime between October 1 and October 31**.
-<br></br>
 
-##Steps
-<br></br>
- step1:go to https://github.com/abhijitmondal121/Hacktoberfest-profileCardGenerator and click on *"star"*🌟 and *"fork"*🍴 and follow the account. 
+<hr>
+
+## Steps:
+
+ 1. Go to `https://github.com/abhijitmondal121/Hacktoberfest-profileCardGenerator` and click on <b>"star"</b>🌟 and <b>"fork"</b>🍴 and follow the account. 
 
 
   
     
-  step2: upload an image in images folder
+2. Upload an image in images folder.
 
-  step3: open index.html
+3. Open `index.html`.
 
-  step4: copy the card section example {
+4. Copy the `card section example`
 
          <div class="card" style="width: 17rem; margin:20px;border-radius: 10%;box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);">
             <img src="images/b.jfif" class="card-img-top" alt="...">
@@ -36,15 +38,14 @@ Create Hacktoberfest PRs. Star this Repo!⭐
               </div>
           </div>
 
-  }
 
-  step5: paste it after other cards.
+5. Paste it `after` other cards.
 
-  step6: change your photo ,name,your bio,github link and linkedin link
+6. Change your `Photo, Name, your Bio,Github link` and `Linkedin link`
 
-  step7: commit
+7. `Commit` your changes.
 
-  step8: make pull request
+8. Make `pull request`.
 
 
 <br></br>
@@ -52,10 +53,12 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 
 
 ##
-## <div align="center"> 🥳 Congratulations!! 🥳 </div>
-## <div align="center">🙌🙌You just created your 1st PR🙌🙌</div>
+## <div align="center"> 🥳 Congratulations! 🥳 </div>
+### <div align="center">🙌You just created your 1st PR🙌</div>
+<br>
 
 #### Now you just have to repeat the steps 4 to 8 for 3 more times with different programs in order to be eligible for a free T-shirt👕 and stickers🤩.
+<hr>
 
 ## HacktoberFest Rules :
 
@@ -64,16 +67,16 @@ Create Hacktoberfest PRs. Star this Repo!⭐
 - Pull requests must be approved by a maintainer of the repository/project to count.
 - If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate.
 - This year, the first **55,000** participants who successfully complete the challenge will be eligible to receive a prize.
+<hr>
 
-## <div align="center">Note:-</div>
+## <div>Notes:</div>
 
-##### 1. Don't copy the code from anywhere on the net.
-##### 3. Deadline is 31st October.
-##### 4. I will personally check each code and if I find any code not following the rules, then his/her Pull Request will be marked as invalid and it won't be counted.😥
+1. Don't copy the code from anywhere on the net.
+2. Deadline is 31st October.
+3. I will personally check each code and if I find any code not following the rules, then his/her Pull Request will be marked as invalid and it won't be counted.😥
+<hr>
 
+## <div align="center">🤗Happy Hacking🤗</div>
 
-##
-
-## <div align="center">🤞Happy Hacking🤞</div>
-<br></br>
+<hr>
 
