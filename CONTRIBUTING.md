@@ -10,7 +10,7 @@
               <h5 class="card-title">Abhijit Mondal</h5>
               <p class="card-text">Hello, I am Abhijit Mondal.Currently pursuing Masters in Computer Application (MCA) from Netaji Subhash Engineering College.</p>
               <a href="https://github.com/abhijitmondal121" class="btn btn-primary"> Github</a>
-              <a href="https://www.linkedin.com/in/abhijit-mondal-1348b81a8/" class="btn btn-primary">Linkdin</a>
+              <a href="https://www.linkedin.com/in/abhijit-mondal-1348b81a8/" class="btn btn-primary">Linkedin</a>
 
     }
 
