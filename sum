@@ -1,0 +1,51 @@
+
+class sum {
+
+    // Function to count pairs in array
+    // with sum less than x.
+    static int findPairs(int arr[], int n, int x)
+    {
+
+        int l = 0, r = n - 1;
+        int result = 0;
+
+        while (l < r)
+        {
+
+            // If current left and current
+            // right have sum smaller than x,
+            // the all elements from l+1 to r
+            // form a pair with current l.
+            if (arr[l] + arr[r] <= x)
+            {
+                System.out.println(arr[l]+" "+arr[r]);
+                result += (r - l);
+                l++;
+            }
+
+            // Move to smaller value
+            else
+                r--;
+        }
+
+        return result;
+    }
+
+    // Driver method
+    public static void main(String[] args)
+    {
+        int n1 = 100;
+        int arr[] = new int[n1];
+        for(int i =0;i<n1;i++)
+            arr[i] = i+1;
+
+        for(int i =0;i<n1;i++)
+            System.out.println(arr[i]);
+        int n = arr.length;
+        int x = n1+1;
+
+        System.out.print(findPairs(arr, n, x));
+    }
+}
+
+
