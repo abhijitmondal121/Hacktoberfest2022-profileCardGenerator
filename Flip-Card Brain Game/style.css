@@ -23,10 +23,17 @@ body, html, .flipper, .f, .b, #g
 	     url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/60583/general_foundicons.ttf") format("truetype"),
 	     url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/60583/general_foundicons.svg#GeneralFoundicons") format("svg");
 }
-a{text-decoration:none;color:#fff;display:block;font:bold 18px/75px 'Open Sans';text-transform:uppercase;text-align:center;padding:0;margin:0 1px;}
-a:hover{color:#fff;background:rgba(255, 255, 255, .1)}
+a
+{
+	text-decoration:none;color:#fff;display:block;font:bold 18px/75px 'Open Sans';text-transform:uppercase;text-align:center;
+	padding:0;margin:0 1px;
+}
+a:hover
+{
+	color:#fff;background:rgba(255, 255, 255, .1)
+}
 
-/* FRONT SCREEN */
+
 .logo{width:450px;height:450px;position:absolute;top:50%;left:50%;margin:-225px 0 0 -225px}
 .logo .card{width:50%;height:50%;cursor:default;position:relative}
 .logo .card.left.active{z-index:2}
