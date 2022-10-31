@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>html Editor </title>
+        
+       <style>  
+       @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+html, button{
+	font-family: Quicksand, sans-serif;
+}
+
+body{
+	background: white;
+	color:#555;
+	text-align: center;
+}
+
+
+
+.brackets{
+	font-family: Advent Pro, sans-serif;
+}
+
+.left{
+	color:tomato;
+}
+
+.right{
+	color:dodgerblue;
+}
+
+.sample{
+	padding:20px;
+	font-size:18px;
+	background: inherit;
+	color:inherit;
+}
+
+#button{
+	margin-top:10px;
+	background:dodgerblue;
+	color:white;
+	width:80%;
+	height:60px;
+	font-size: 20px;
+	outline: none;
+	border:5px solid deepskyblue;
+	border-radius: 5px;
+}
+
+#button:active{
+	transform: scale(0.95);
+}
+		
+        </style>
+    </head>
+    <body>
+        <p class='sample'>This is the simple example of how HTML Editor works. You can change the code if you want.</p>
+        
+        <button id='button' onClick='changeTheme()'>Dark Theme</button>
+    </body>
+    <script>    
+    function changeTheme(){
+	if(document.getElementById('button').innerHTML==='Dark Theme'){
+		document.body.style.background='#555';
+		document.body.style.color='white';
+		document.getElementById('button').innerHTML='Light Theme';
+	}
+	else{
+		document.body.style.background='white';
+		document.body.style.color='#555';
+		document.getElementById('button').innerHTML='Dark Theme';
+	}
+}
+		
+    </script>
+</html>
+
+		
