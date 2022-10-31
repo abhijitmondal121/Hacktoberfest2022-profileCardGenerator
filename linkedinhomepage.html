@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LinkedIn</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      body {
+        background-color: #f3f2ef;
+      }
+
+      .navbar {
+        background-color: white;
+        width: 100vw;
+        height: 60px;
+        border-bottom: 1px solid #00000014;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      .nav-content {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+
+      .nav-img {
+        margin-left: 18%;
+        color: #0a66c2;
+      }
+
+      .nav-search {
+        height: 35px;
+        width: 270px;
+        margin-left: 7px;
+        border: none;
+        border-radius: 4px;
+        background-color: #eef3f8;
+        text-indent: 12px;
+      }
+
+      .navigation {
+        margin-left: 12%;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-icon {
+        text-decoration: none;
+        color: #666;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 7px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      .main {
+        height: 100%;
+        display: flex;
+        margin: auto;
+        margin-top: 70px;
+        max-width: 60%;
+      }
+
+      .left {
+        border: 1px solid black;
+        width: 600px;
+        margin-top: 35px;
+        position:relative;
+        background-color: lightpink;
+      }
+
+      .center {
+        /* border: 1px solid black; */
+        flex-grow: 0.9;
+        margin-top: 35px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      .right {
+        border: 1px solid black;
+        width: 200px;
+        margin-top:35px;
+        position:relative;
+        background-color: lightblue;
+      }
+
+      .create-posts {
+        background-color: white;
+        height: 120px;
+        width: 540px;
+        border: 1px solid #6e6e6e42;
+        border-radius: 5px;
+      }
+
+      .post-image {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+
+      .create-post-top {
+        display: flex;
+      }
+
+      .post-input {
+        height: 40px;
+        flex: 1;
+        border-radius: 25px;
+        border: 1px solid #aaa;
+        margin: 14px;
+        text-indent: 15px;
+      }
+      .create-post-bottom {
+        display: flex;
+        justify-content: space-around;
+      }
+      .post-button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        color: #00000099;
+      }
+
+      .mr-10 {
+        margin-right: 10px;
+      }
+
+      .blue-button {
+        color: #70b5f9;
+      }
+      .green-button {
+        color: #7fc15e;
+      }
+      .orange-button {
+        color: #e7a33e;
+      }
+      .pink-button {
+        color: #f89295;
+      }
+
+      .posts-hr {
+        border-top: 1px solid #000000aa;
+        margin-top: 30px;
+        border-color: #00000033;
+      }
+
+      .post {
+        background-color: white;
+        border: 1px solid #6e6e6e;
+        border-color: #6e6e6e42;
+        margin-top: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .post-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .post-metadata {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 7px;
+        line-height: 1.3rem;
+      }
+      .post-creator {
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .faded-text {
+        font-size: small;
+        color: #00000099;
+      }
+
+      .post-data {
+        font-size: 15px;
+        color: rgb(98, 97, 97);
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+
+      .read-more {
+        margin-left: 447px;
+        margin-top: 12px;
+        color: #00000099;
+      }
+
+      .likes {
+        font-size: small;
+        color: #0a66c2;
+        margin-left: 15px;
+      }
+
+      .center-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .no-likes {
+        font-size: small;
+        margin-left: 5px;
+      }
+
+      .interaction-button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        margin-bottom: 10px;
+        color: #00000099;
+        margin-left: 7px;
+      }
+
+      .likes-hr {
+        border-top: 1px solid #000000aa;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        border-color: #00000033;
+      }
+
+      .post-interactions {
+        display: flex;
+      }
+
+      .post-content-image {
+        margin-top: 10px;
+        width: 50%;
+
+      }
+      .post-left-image {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        position:absolute;
+        top:20px;
+        left:35%;
+           }
+      .left-image-info1 { 
+        margin-top:20px;
+        font-family:'Times New Roman', Times, serif;
+        text-align:center;
+
+        
+      }
+      .left-image-info2 {
+        margin-top: 2px;
+        font-family:'Times New Roman', Times, serif;
+        text-align:center;
+      }
+      .right-heading {
+        font-family:'Times New Roman', Times, serif;
+        font-size:20px;
+        color: black;
+        background-color:lightpink;
+        width:150px;
+        position:absolute;
+        top:10px;
+        left:5%;
+
+      }
+      .right-info1 {
+        font-family:'Times New Roman', Times, serif;
+        font-size:15px;
+        margin-top:10px;
+      }
+      .right-info2 {
+        font-family:'Times New Roman', Times, serif;
+        font-size:15px;
+        margin-top:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-content">
+        <div class="nav-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            class="nav-logo"
+          >
+            <g>
+              <path
+                d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z"
+                fill="currentColor"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <input class="nav-search" type="text" placeholder="Search" />
+        <nav class="navigation">
+          <a class="nav-icon">
+            <span class="material-icons"> home </span> Home
+          </a>
+          <a class="nav-icon">
+            <span class="material-icons"> people </span> My Network
+          </a>
+          <a class="nav-icon">
+            <span class="material-icons"> work </span> Jobs
+          </a>
+          <a class="nav-icon">
+            <span class="material-icons"> chat_bubble </span> Messaging
+          </a>
+          <a class="nav-icon">
+            <span class="material-icons"> notifications </span> Notifications
+          </a>
+          <a class="nav-icon">
+            <span class="material-icons"> person </span> Me
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="left">
+       <div style="background-color: lightblue; height: 50px; width:200px;"></div>
+      <img class="post-left-image" src="./user.jpeg" />
+
+      <div class="left-image-info1"> Patel Parth Dilipkumar</div> 
+      <div class="left-image-info2">Babaria Institute Of Technology</div>
+      <div style="border:1px solid black; margin-top:10px;"></div>
+      <div class="right-info">• 5856 Connection </div>
+      <div style="border:0.25px solid black; margin-top:5px;"></div>
+      <div style="font-family: 'Times New Roman', Times, serif; font-size:medium; margin-top:20px">PROJECT</div>
+      <div style="border:0.25px solid black; margin-top:5px;"></div>
+      <div style="font-family: 'Times New Roman', Times, serif; font-size:medium; margin-top:10px">Weather App</div>
+      <div style="border:0.25px solid black; margin-top:5pxpx;"></div>
+      <div style="font-family: 'Times New Roman', Times, serif; font-size:medium; margin-top:10px">Emotion Based Music Player</div>
+      <div style="border:0.25px solid black; margin-top:5px;"></div>
+      <div style="font-family: 'Times New Roman', Times, serif; font-size:medium; margin-top:10px">LinkedIn Static Page</div>
+      <div style="border:0.25px solid black; margin-top:5px;"></div>
+    </div>
+     
+      <div class="center">
+        <div class="create-posts">
+          <div class="create-post-top">
+            <img class="post-image" src="./user.jpeg" />
+            <input placeholder="Start a Post" class="post-input" type="text" />
+          </div>
+          <div class="create-post-bottom">
+            <button class="post-button">
+              <span class="material-icons blue-button mr-10"> image </span>
+              Photo
+            </button>
+            <button class="post-button">
+              <span class="material-icons green-button mr-10">
+                play_circle_filled
+              </span>
+              Video
+            </button>
+            <button class="post-button">
+              <span class="material-icons orange-button mr-10"> event </span>
+              Event
+            </button>
+            <button class="post-button">
+              <span class="material-icons pink-button mr-10"> article </span>
+              Write Article
+            </button>
+          </div>
+
+          <div class="posts-hr"></div>
+
+          <div class="post">
+            <div class="post-info">
+              <img class="post-image" src="./masai.jpg" />
+
+              <div class="post-metadata">
+                <div class="post-creator">Masai School</div>
+                <div class="faded-text">7,123 followers</div>
+                <div class="faded-text">
+                  2d • <span class="material-icons faded-text"> public </span>
+                </div>
+              </div>
+            </div>
+            <div class="post-data">
+              Here's to all the brilliant Engineers, Designers and Programmers
+              who made using social media so easy, even kids can do it
+              effortlessly.
+            </div>
+
+            <div class="read-more">...see more</div>
+            <div>
+              <img
+                class="post-content-image"
+                src="https://media-exp1.licdn.com/dms/image/C5622AQGV9_HzuD-QwQ/feedshare-shrink_800/0/1625043676570?e=1628121600&v=beta&t=hst84vpnp9U4GErEomeWJfLiAsPSCJXt_a8YNZMSdas"
+                alt=""
+              />
+            </div>
+            <div class="center-content">
+              <span class="material-icons likes"> thumb_up </span>
+              <span class="no-likes">20</span>
+            </div>
+            <div class="likes-hr"></div>
+            <div class="post-interactions">
+              <button class="interaction-button">
+                <span class="material-icons mr-10"> thumb_up </span>Like
+              </button>
+              <button class="interaction-button">
+                <span class="material-icons mr-10"> chat </span>Comment
+              </button>
+              <button class="interaction-button">
+                <span class="material-icons mr-10"> share </span>Share
+              </button>
+              <button class="interaction-button">
+                <span class="material-icons mr-10"> send </span>Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div style="background-color:lightpink; height:50px; width:200px;"></div>
+        <div class="right-heading">Linkedin News<span class="material-icons"> 
+          info
+          </span>
+          </div>
+        <div class="right-info1">
+          Samsung GAlaxy Watch 4 color options
+          </div>
+          <div class="faded-text">
+            1 day ago • 4860 readers <span class="faded-text"></span> 
+          </div>
+          <div class="right-info2">
+            Infinix Now Concept Phones are fastest Charging Phones
+          </div>
+          <div class="faded-text">
+            2 day ago • 4506 readers <span class="faded-text"></span>
+          </div>
+          <div class="right-info2">
+        Jio to launch 5G in partnership with google
+        </div> 
+          <div class="faded-text">
+            3 day ago • 5460 readers <span class="faded-text" ></span>
+            </div>
+              <div class="right-info2">
+                PS 5 Restock update for target
+                </div> 
+                  <div class="faded-text">
+                    4 day ago • 5800 readers <span class="faded-text"></span> 
+                    </div>
+                    <div style="border:0.25px solid black; margin-top:5px;"></div>
+                    <div style="font-family: 'Times New Roman', Times, serif; font-size:medium; margin-top:10px">SHOW MORE <span class="material-icons">
+                      expand_more
+                      </span></div> 
+                    <div style="border:0.25px solid black; margin-top:5px;"></div>
+                  </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
